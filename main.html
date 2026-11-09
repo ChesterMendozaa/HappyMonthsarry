@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>November 10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Reading progress bar -->
+<div class="progress-track" aria-hidden="true">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow"></div>
+    <h1>Another month<br>of <em>us.</em></h1>
+    <p class="lede">A small page for a small number of months that somehow feel like a lot of life.</p>
+    <div class="scroll-cue">Scroll</div>
+  </header>
+
+  <!-- 01 COUNTER -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="num">01</span>
+      <h2>Time elapsed</h2>
+    </div>
+
+    <div class="time-group">
+      <div class="time-label">
+        <span class="tag">Since we started talking</span>
+        <span class="date">July 28, 2026</span>
+      </div>
+      <div class="counter">
+        <div class="cell"><span class="n flip-num" data-num="talk-d">0</span><span class="l">Days</span></div>
+        <div class="cell"><span class="n flip-num" data-num="talk-h">0</span><span class="l">Hours</span></div>
+        <div class="cell"><span class="n flip-num" data-num="talk-m">0</span><span class="l">Minutes</span></div>
+        <div class="cell"><span class="n flip-num" data-num="talk-s">0</span><span class="l">Seconds</span></div>
+      </div>
+    </div>
+
+    <div class="time-group">
+      <div class="time-label">
+        <span class="tag">Since we became us</span>
+        <span class="date">October 10, 2026</span>
+      </div>
+      <div class="counter">
+        <div class="cell"><span class="n flip-num" data-num="us-d">0</span><span class="l">Days</span></div>
+        <div class="cell"><span class="n flip-num" data-num="us-h">0</span><span class="l">Hours</span></div>
+        <div class="cell"><span class="n flip-num" data-num="us-m">0</span><span class="l">Minutes</span></div>
+        <div class="cell"><span class="n flip-num" data-num="us-s">0</span><span class="l">Seconds</span></div>
+      </div>
+    </div>
+
+    <p class="counter-note">
+      Two dates that matter for both of us.
+    </p>
+  </section>
+
+  <!-- 02 LETTER -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="num">02</span>
+      <h2>Something I wanted to say</h2>
+    </div>
+    <button class="letter-trigger" id="letterBtn" aria-expanded="false" aria-controls="letter">
+      <span class="arrow">&rsaquo;</span>
+      <span>Read it</span>
+    </button>
+
+    <div class="letter" id="letter">
+
+      <div class="letter-toolbar">
+        <button class="translate-btn" id="translateBtn" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
+          </svg>
+          <span id="translateLabel">Translate to Tagalog</span>
+        </button>
+      </div>
+
+      <div class="letter-content" data-lang="en">
+        <p>Marianne,</p>
+        <p>Baby, first of all, thank you for all the time you've been giving me. I think it all started when we kept having conversations with each other, even if it meant staying up late. Thank you because we wouldn't be like this if you hadn't made the first move back then. I was just too scared to say what I really felt, or in short, I was too shy HAHAHAHA.</p>
+        <p>But anyway, here we are now, finally together, and I'm just really happy about it. It feels like I found a treasure chest HAHAHA.</p>
+        <p>I'm also sorry if I can't give you the things you need right now, but I promise I'll make it up to you. I'll also be consistent in this relationship. I hope things between us never change and that we stay the way we are right now.</p>
+        <p>And please, just tell me if there are things I say that are wrong so I can avoid saying them. Sometimes, I might go too far with the things I say without realizing that they're already wrong. I promise I'll keep changing and improving.</p>
+        <p>That's all, and thank you so much for everything, I love you so much!</p>
+        <p class="sign">— Chester</p>
+      </div>
+
+      <div class="letter-content" data-lang="tl" hidden>
+        <p>Marianne,</p>
+        <p>Baby, una sa lahat, thank you sa lahat ng time na binibigay mo sakin simula na siguro to nung sunod sunod na pag-uusap natin na puro puyatan pa, then thank you kasi hindi sana tayo ganto kung hindi pa ikaw nag first move non, parang takot pa kasi ako non sabihin talaga o in short torpe HAHAHAHA</p>
+        <p>Pero so yun na nga andito na tayo sa time na naging tayo na which is para sakin sobrang saya and hindi ko lang na expect na ganto mangyayari, kasi sino ba naman diba ikaw pa talaga nagka gusto sakin tas ang ganda ganda mo pa aa, para akong nakakita ng treasure chest nyan HAHAHAHAHA</p>
+        <p>Then sorry if sa ngayon hindi ko pa kaya ibigay yung mga things na need mo, pero promise babawi't babawi ako and then magiging consistent ako sa relationship natin na'to, huwag sana magbago kung ano tayo ngayon.</p>
+        <p>And magsabi kalang if may mga bagay akong maling nasasabi para maiwasan ko kasi minsan o siguro sumosobra na rin ako sa mga sinasabi ko na mali na pala ganon, promise magbabago at magbabago ako.</p>
+        <p>'Yun lang, baby. Thank you so much sa lahat, I love you so much!</p>
+        <p class="sign">— Chester</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 03 TIMELINE -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="num">03</span>
+      <h2>How we got here</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">July 28, 2026</div>
+        <div class="tl-text">This was the time I finally messaged you because it had been so long since I last saw you. Of course, I wanted to check up on you and see how you were doing.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">August 2026</div>
+        <div class="tl-text">This was when our late-night conversations started. We began staying up late just to keep talking to each other.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">September 2026</div>
+        <div class="tl-text">These were the days when I was really busy, but even with everything going on, I still managed to find time to talk.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot accent"></div>
+        <div class="tl-date">October 10, 2026</div>
+        <div class="tl-text">And here comes the special day. This was when we finally confessed our feelings to each other, although before that, we were already dropping hints through our Reels and Notes.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot accent"></div>
+        <div class="tl-date">November 10, 2026</div>
+        <div class="tl-text">And just like that, we finally reached our first month together. Nothing has changed since the day we became a couple. I will never get tired of loving you. I don't know what it is about you, but there's just something different about you. You make me feel like the luckiest person in the world.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 PHOTOS -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="num">04</span>
+      <h2>Ten of you, as I've known you so far</h2>
+    </div>
+    <p class="photo-intro">
+      Some of these you sent me, some I saved without saying anything. Distance or not, these are the versions of you I've gotten to know and I haven't gotten tired of looking at any of them.
+    </p>
+
+    <div class="gallery">
+
+      <div class="photo-row full">
+        <div class="photo">
+          <div class="photo-frame portrait">
+            <img src="5.jpg" alt="Photo 1" data-lightbox data-caption="of course unang-una, NAPAKA GANDA TALAGA SHETS">
+          </div>
+          <p class="photo-cap">of course unang-una, NAPAKA GANDA TALAGA SHETS</p>
+        </div>
+      </div>
+
+      <div class="photo-row duo">
+        <div class="photo">
+          <div class="photo-frame portrait">
+            <img src="7.jpg" alt="Photo 2" data-lightbox data-caption="Bleeee HAHAHAAH">
+          </div>
+          <p class="photo-cap">Bleeee HAHAHAAH</p>
+        </div>
+        <div class="photo">
+          <div class="photo-frame portrait">
+            <img src="9.jpg" alt="Photo 3" data-lightbox data-caption="Ang poging babae eh">
+          </div>
+          <p class="photo-cap">Ang poging babae eh</p>
+        </div>
+      </div>
+
+      <div class="photo-row full">
+        <div class="photo">
+          <div class="photo-frame wide">
+            <img src="6.jpg" alt="Photo 4" data-lightbox data-caption="Pringles yarn">
+          </div>
+          <p class="photo-cap">Pringles yarn</p>
+        </div>
+      </div>
+
+      <div class="photo-row duo">
+        <div class="photo">
+          <div class="photo-frame portrait">
+            <img src="2.jpg" alt="Photo 5" data-lightbox data-caption="Napaka GANDA pag naka spectacles pa">
+          </div>
+          <p class="photo-cap">Napaka GANDA pag naka spectacles pa</p>
+        </div>
+        <div class="photo">
+          <div class="photo-frame portrait">
+            <img src="8.jpg" alt="Photo 6" data-lightbox data-caption="Angas rin talaga pag naka ayos e">
+          </div>
+          <p class="photo-cap">Angas rin talaga pag naka ayos e</p>
+        </div>
+      </div>
+
+      <div class="photo-row full">
+        <div class="photo">
+          <div class="photo-frame portrait">
+            <img src="1.jpg" alt="Photo 7" data-lightbox data-caption="nang-aakit pa talaga shets">
+          </div>
+          <p class="photo-cap">nang-aakit pa talaga shets</p>
+        </div>
+      </div>
+
+      <div class="photo-row trio">
+        <div class="photo">
+          <div class="photo-frame square">
+            <img src="3.jpg" alt="Photo 8" data-lightbox data-caption="Sino ki-kiss mo dyan?">
+          </div>
+          <p class="photo-cap">Sino ki-kiss mo dyan?</p>
+        </div>
+        <div class="photo">
+          <div class="photo-frame square">
+            <img src="4.jpg" alt="Photo 9" data-lightbox data-caption="Eto pala pfp mo no'n">
+          </div>
+          <p class="photo-cap">Eto pala pfp mo no'n</p>
+        </div>
+        <div class="photo">
+          <div class="photo-frame square">
+            <img src="10.jpg" alt="Photo 10" data-lightbox data-caption="Olats sa eye to eye sayo buseng">
+          </div>
+          <p class="photo-cap">Olats sa eye to eye sayo buseng</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 05 MUSIC -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="num">05</span>
+      <h2>Two songs</h2>
+    </div>
+    <p class="music-intro">One you already know. One I'm giving to you. Both start exactly where they should.</p>
+
+    <div class="track">
+      <div class="track-player">
+        <div class="music-meta">
+          <div>
+            <div class="music-title">Better</div>
+            <div class="music-artist">Khalid</div>
+          </div>
+          <div class="music-duration" data-dur="track1">0:00</div>
+        </div>
+
+        <div class="progress-wrap" data-track="track1">
+          <div class="progress-bar" data-bar="track1"></div>
+        </div>
+
+        <div class="controls">
+          <button class="play-btn" data-play="track1" aria-label="Play">
+            <svg data-icon="track1" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <span class="time" data-time="track1">0:00</span>
+          <span class="start-hint" data-hint="track1"></span>
+        </div>
+      </div>
+
+      <p class="music-note">
+        So eto naman yung song na first time kong mag parinig sayo, pero syempre hindi mo pa alam non. sana tanda mo pa NYAHAHHA.
+      </p>
+
+      <audio id="track1" preload="metadata" src="Khalid - Better (Lyrics).mp3" data-start="1:18"></audio>
+    </div>
+
+    <div class="track">
+      <div class="track-player">
+        <div class="music-meta">
+          <div>
+            <div class="music-title">Syempre</div>
+            <div class="music-artist">Uncle dags</div>
+          </div>
+          <div class="music-duration" data-dur="track2">0:00</div>
+        </div>
+
+        <div class="progress-wrap" data-track="track2">
+          <div class="progress-bar" data-bar="track2"></div>
+        </div>
+
+        <div class="controls">
+          <button class="play-btn" data-play="track2" aria-label="Play">
+            <svg data-icon="track2" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <span class="time" data-time="track2">0:00</span>
+          <span class="start-hint" data-hint="track2"></span>
+        </div>
+      </div>
+
+      <p class="music-note">
+        Syempre alam mo na'to, favv song ko rin to kay uncle dags HAHAHAHHAHAAHHAHA
+      </p>
+
+      <audio id="track2" preload="metadata" src="Willi Revillame - Syempre (Lyrics).mp3" data-start="35"></audio>
+    </div>
+  </section>
+
+  <!-- 06 REASONS -->
+  <section class="reveal">
+    <div class="section-head">
+      <span class="num">06</span>
+      <h2>A few things, in no particular order</h2>
+    </div>
+    <ul class="reasons" id="reasons">
+      <li><span class="idx">i.</span><span class="txt">The way you explain things you're excited about.</span></li>
+      <li><span class="idx">ii.</span><span class="txt">How you notice small things most people don't.</span></li>
+      <li><span class="idx">iii.</span><span class="txt">Your patience with me when I'm being busy some times.</span></li>
+      <li><span class="idx">iv.</span><span class="txt">The inside jokes that make no sense to anyone else.</span></li>
+      <li><span class="idx">v.</span><span class="txt">That you make ordinary days feel worth remembering.</span></li>
+    </ul>
+  </section>
+
+  <!-- 07 QUESTION -->
+  <section class="reveal question-section">
+    <div class="section-head">
+      <span class="num">07</span>
+      <h2>One question before you go</h2>
+    </div>
+    <p class="question-text">What's one thing you want us to do the first time we meet?</p>
+    <form class="question-form" id="questionForm">
+      <input type="text" id="questionInput" placeholder="Type your answer..." autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+    <p class="question-response" id="questionResponse" hidden>Noted. Consider it happening.</p>
+  </section>
+
+  <!-- CLOSING QUOTE -->
+  <section class="closing-quote reveal">
+    <p class="big-quote">I'd wait<br>as long as it takes.</p>
+  </section>
+
+  <!-- 08 CLOSING -->
+  <section class="closing reveal">
+    <div class="section-head">
+      <span class="num">08</span>
+      <h2>Looking ahead</h2>
+    </div>
+    <p class="big">Here's to more months<br>that feel like <em>this.</em></p>
+    <p>No big plans, no grand declarations. Just more of the same, with you. Happy monthsary.</p>
+  </section>
+
+  <footer>
+    <span>Made for you, Baby</span>
+    <span>11 · 10 · 26</span>
+  </footer>
+
+</div>
+
+<!-- FLOATING SONG PILL -->
+<button class="song-pill" id="songPill" aria-label="Play our song">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/>
+  </svg>
+  <span>Play our song</span>
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
